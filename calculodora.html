@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		*{
+			margin:0;
+			padding: 0;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		.box{
+			width: 300px;
+			height: 350px;
+			border: 1px solid #000;
+			margin:auto; 
+			padding: 15px;
+
+		}
+
+		button{
+			
+			width:67.5px;
+			display:block;
+			float:left;
+			padding:15px 0;
+			
+
+		}
+
+		.display{
+			width:270px;
+			height:60px;
+			display:block;
+			margin:auto;
+
+		}
+
+		.box-number{
+			width:270px;
+			border: 1px solid #000;
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+
+		<input class="display" type="text" name="" disabled="disabled" id="display"> <br>
+		<div class="box-number">
+			<button onclick="btn('C')">C</button>
+			<button onclick="btn('()')">()</button>
+			<button onclick="btn('%')">%</button>
+			<button onclick="btn('/')">/</button>
+			<button onclick="btn(7)">7</button>
+			<button onclick="btn(8)">8</button>
+			<button onclick="btn(9)">9</button>
+			<button onclick="btn('X')">x</button>
+			<button onclick="btn(4)">4</button>
+			<button onclick="btn(5)">5</button>
+			<button onclick="btn(6)">6</button>
+			<button onclick="btn('-')">-</button>
+			<button onclick="btn(1)">1</button>
+			<button onclick="btn(2)">2</button>
+			<button onclick="btn(3)">3</button>
+			<button onclick="btn('+')">+</button>
+			<button onclick="btn('+/-')">+/-</button>
+			<button onclick="btn(0)">0</button>
+			<button onclick="btn('.')">.</button>
+			<button onclick="btn('=')">=</button>
+			<div class="clear"> </div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		
+		function btn(btn){
+
+			if(btn == 'C'){
+				
+			}
+			else {
+				document.getElementById('display').value += btn;
+			}
+
+			switch(btn){
+				case '=':
+										
+			}
+			
+		}
+	</script>
+</body>
+</html>
